@@ -1,0 +1,353 @@
+.main
+    // background-color: red
+    width: 100vw
+    height: 800px    
+    background-size: 100vw 300px
+    background-position: top
+    background-repeat: no-repeat
+    
+
+.main__light
+    background-image: url('../img/bg_light.jpg')
+    background-color: #ffff
+
+
+.main__dark
+    background-image: url('../img/bg__dark.jpg')
+    background-color: black
+
+.container
+    width: 540px
+    height: 100%
+    display: block
+    margin: 0 auto
+    padding-top: 70px
+
+.title-block
+    width: 541px
+    height: 48px
+    display: flex
+    justify-content: space-between
+
+
+.title
+    font-weight: 700
+    font-size: 40px
+    color: #FFFFFF
+    letter-spacing: 15px
+
+.title__img
+    width: 26px
+    height: 26px
+
+.title__img__light
+    background-image: url(../icons/light_icon.svg)
+
+.title__img__dark
+    background-image: url(../icons/dark_icon.svg)
+
+
+.input__main__wrap
+    width: 540px
+    min-height: 64px    
+    border-radius: 5px    
+    z-index: 0
+    position: relative
+    display: flex
+    justify-content: left
+    
+    
+
+.input__main__wrap__light
+    background: #FFFFFF
+    border: 1px solid #E3E4F1
+    color: #494C6B
+
+.input__main__wrap__dark
+    background: #25273D
+    border: 1px solid #393A4B
+    color: #C8CBE7
+
+
+    
+
+
+
+.input__main__wrap__none
+    display: none
+
+.input__main__check__block
+    position: relative
+    height: 100%
+    width: 48px
+
+
+.input__main__check
+    width: 23px
+    height: 18px
+    color: white
+    border: red
+    border-radius: 100%
+    z-index: -1
+    opacity: 0
+
+// .input__main__check
+//     width: 0
+//     height: 0
+//     position: absolute
+    
+
+// .input__main__check::before
+//     content: ''
+
+.checkmark__light
+    position: relative
+    display: block
+    width: 23px
+    height: 23px
+    border: 1px solid #E3E4F1
+    border-radius: 100%
+    z-index: 2
+    // margin-top: 19px
+    margin-left: 24px
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+
+.checkmark__dark
+    position: relative
+    display: block
+    width: 23px
+    height: 23px
+    border: 1px solid #393A4B
+    border-radius: 100%
+    z-index: 2
+    // margin-top: 19px
+    margin-left: 24px
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+
+.checkmark:hover
+    border: 1px solid rgba(192, 88, 243, 1)
+    cursor: pointer
+
+.checkmark:after
+    content: ""
+    position: absolute
+    display: none
+
+
+.input__main__check__block input.input__main__check:checked ~ .checkmark:after
+    display: block
+    background-image: url('../icons/check_white.svg')
+    background-position: center
+    background-repeat: no-repeat
+    z-index: 2
+    width: 11px
+    height: 10px
+
+.input__main__check__block input.input__main__check:checked ~ .checkmark
+    background: linear-gradient(135deg, #55DDFF 0%, #C058F3 100%)
+    border: none
+
+.input__main__check__text
+    width: 492px
+    height: 100%
+    border-radius: 5px
+    border: none
+    padding-top: 20px
+    padding-left: 24px
+    font-weight: 400
+    font-size: 18px
+    // color: #9495A5
+    
+
+
+
+
+.input__main__check__text__dark
+    background: #25273d
+    color: #C8CBE7
+        
+
+
+.input__main__check__text:focus, input:focus
+    outline: none
+
+.input__main__wrap__position
+    margin-top: 40px
+    margin-bottom: 24px
+
+.input__main__wrap__mb
+    margin-bottom: 65px
+
+.text__completed__light
+    text-decoration: line-through
+    color: #D1D2DA
+    width: 468px
+    height: 100%
+    padding-top: 21px
+    padding-left: 24px
+    font-weight: 400
+    font-size: 18px
+    position: relative
+
+.text__completed__dark
+    text-decoration: line-through
+    color: #4D5067
+    width: 468px
+    height: 100%
+    padding-top: 21px
+    padding-left: 24px
+    font-weight: 400
+    font-size: 18px
+    position: relative
+
+.list-block__text
+    width: 468px
+    min-height: 100%
+    padding-top: 21px
+    padding-left: 24px
+    padding-bottom: 15px
+    font-weight: 400
+    font-size: 18px
+    // color: #494C6B
+    position: relative
+
+.list-block
+    position: relative
+    dispaly: flex
+    flex-direction: column
+    justify-content: flex-start
+    
+    // height: 100%
+    // display: flex
+    // flex-direction: column
+
+
+.list-block__shadow
+    box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5)
+
+.list-block__text:hover ~ .input__main__check__close
+    position: absolute
+    display: block
+    width: 18px
+    height: 18px
+    top: 23px
+    right: 24px
+    cursor: pointer
+
+
+.input__main__check__close
+    display: none
+
+.input__main__check__close:hover
+    position: absolute
+    display: block
+    width: 18px
+    height: 18px
+    top: 23px
+    right: 24px
+    cursor: pointer
+
+// .input__main__check__close__active
+//     display: block
+//     width: 18px
+//     height: 18px
+//     margin-top: 23px
+
+.list-block__menu__active__no
+    display: none
+
+.list-block__menu
+    // display: none
+    display: flex
+    justify-content: space-between
+    width: 540px
+    height: 50px    
+    padding: 16px 24px
+    border-radius: 5px    
+    
+
+.list-block__menu__light
+    background: #fff
+    border: 1px solid #E3E4F1
+    box-shadow: 0 35px 50px -15px rgb(194 195 214 / 50%)
+
+.list-block__menu__dark
+    background: #25273D
+    border: none
+
+.list-block__menu__text
+    font-weight: 400
+    font-size: 14px
+    cursor: pointer
+
+
+.menu__text__b-a__light
+    color: #9495A5
+    cursor: pointer
+    &:hover
+        color: #494C6B
+
+.menu__text__b-a__dark
+    color: #5B5E7E
+    &:hover
+        color: #E3E4F1
+
+.list-block__menu__text__control__elem
+    font-weight: 700
+    font-size: 14px
+    cursor: pointer
+    
+
+.menu__text__light
+    color: #9495A5
+    &:hover
+        color: #494C6B
+
+.menu__text__dark
+    color: #5B5E7E
+    &:hover
+        color: #E3E4F1
+
+
+.list-block__menu__text__control
+    width: 166px
+    display: flex
+    justify-content: space-between
+
+.list-block__menu__text__control__dark
+    background: #25273D
+    box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.5)
+    color: #5B5E7E
+
+.list-block__menu__text__control__light
+    background: #FFFFFF
+    box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5)
+
+
+#noCursor
+    cursor: default
+
+.control__elem__active
+    font-weight: 700
+    font-size: 14px
+    color: #3A7CFD
+
+.hint
+    display: block
+    width: 185px
+    margin: 0 auto
+    font-weight: 400
+    font-size: 14px
+    margin-top: 49px
+
+.hint__light
+    color: #9495A5
+
+.hint__dark
+    color: #5B5E7E

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Kumbh+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="main main__light">
+        <div class="container">
+            <div class="title-block">
+                <div class="title">TODO</div>
+                <!-- <img src="icons/light_icon.svg" alt="day or night" class="title__img__light"> -->
+                <div class="title__img title__img__light"></div>
+            </div>
+            <div class="input__main__wrap input__main__wrap__light input__main__wrap__position">
+                <div class="input__main__check__block">
+                    <input type="checkbox" disabled id="check-main" class="input__main__check">
+                    <label id="checkmarkMain" for="check-main" class="checkmark checkmark__light"></label>
+                </div>
+                <input placeholder="Create a new todo…" type="text" class="input__main__check__text">
+
+            </div>
+            <div class="list-block">
+                <!-- <div class="input__main__wrap">
+                    <div class="input__main__check__block">
+                        <input type="checkbox" id="check2" class="input__main__check">
+                        <label for="check2" class="checkmark"></label>
+                    </div>
+                    <div class="list-block__text">
+                        Complete online JavaScript course
+                    </div>
+                    <img src="icons/close.svg" alt="close" class="input__main__check__close">
+                </div> -->
+                
+            </div>
+            <div id="menu" class="list-block__menu__active__no list-block__menu__light">
+                <div id="noCursor" class="list-block__menu__text menu__text__b-a__light">
+                   <span>5</span> items left
+                </div>
+                <div class="list-block__menu__text__control list-block__menu__text__control__light">
+                    <div id="All" class="list-block__menu__text__control__elem menu__text__light">All</div>
+                    <div id="Active" class="list-block__menu__text__control__elem menu__text__light">Active</div>
+                    <div id="Completed" class="list-block__menu__text__control__elem menu__text__light">Completed</div>
+                </div>
+                <div id="Clear" class="list-block__menu__text menu__text__b-a__light">
+                    Clear Completed
+                </div>
+            </div>
+            <div class="hint hint__light">Drag and drop to reorder list</div>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
